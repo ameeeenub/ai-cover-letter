@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Cover Letter Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Cover Letter Generator</h1>
+      <form id="cover-form">
+        <input type="text" id="name" placeholder="Your Full Name" required />
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Professional Email"
+          required
+        />
+        <input type="tel" id="phone" placeholder="Your Phone Number" required />
+        <input
+          type="text"
+          id="job"
+          placeholder="Job Title You're Applying For"
+          required
+        />
+        <input type="text" id="company" placeholder="Company Name" required />
+        <textarea
+          id="jobDescription"
+          placeholder="Paste the full job description here"
+          required
+        ></textarea>
+        <textarea
+          id="skills"
+          placeholder="Your relevant skills (comma separated)"
+          required
+        ></textarea>
+
+        <button type="submit">Generate Cover Letter</button>
+      </form>
+      <button id="downloadBtn" style="display: none">
+        Download Cover Letter
+      </button>
+      <div id="result"></div>
+    </div>
+    <footer class="signature">Made with ❤️ by Mohammed amine el mahboub</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
